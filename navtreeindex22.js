@@ -1,7 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"class_p4_1_1_remove_exits.html":[13,0,12,386],
-"class_p4_1_1_remove_generic_types.html":[12,0,14,372],
 "class_p4_1_1_remove_generic_types.html":[13,0,12,387],
 "class_p4_1_1_remove_hidden.html":[12,0,14,373],
 "class_p4_1_1_remove_hidden.html":[13,0,12,388],
@@ -121,10 +119,10 @@ var NAVTREEINDEX22 =
 "class_p4_1_1_side_effects.html":[13,0,12,425],
 "class_p4_1_1_side_effects.html#a31985847bb46db197e15624f96e00d64":[12,0,14,410,2],
 "class_p4_1_1_side_effects.html#a31985847bb46db197e15624f96e00d64":[13,0,12,425,2],
-"class_p4_1_1_side_effects.html#a9a730a5b3c247a3952f35abe20437192":[12,0,14,410,0],
-"class_p4_1_1_side_effects.html#a9a730a5b3c247a3952f35abe20437192":[13,0,12,425,0],
 "class_p4_1_1_side_effects.html#ac2cb9aae7bf2dabb0ef2f6481d10d800":[12,0,14,410,1],
 "class_p4_1_1_side_effects.html#ac2cb9aae7bf2dabb0ef2f6481d10d800":[13,0,12,425,1],
+"class_p4_1_1_side_effects.html#ae99b9b7ce31062fe14bf5e13acea4e76":[12,0,14,410,0],
+"class_p4_1_1_side_effects.html#ae99b9b7ce31062fe14bf5e13acea4e76":[13,0,12,425,0],
 "class_p4_1_1_simple_call_info.html":[12,0,14,411],
 "class_p4_1_1_simple_call_info.html":[13,0,12,426],
 "class_p4_1_1_simple_enum_instance.html":[12,0,14,412],
@@ -249,5 +247,7 @@ var NAVTREEINDEX22 =
 "class_p4_1_1_symbolic_value_factory.html":[13,0,12,488],
 "class_p4_1_1_symbolic_varbit.html":[12,0,14,474],
 "class_p4_1_1_symbolic_varbit.html":[13,0,12,489],
-"class_p4_1_1_symbolic_void.html":[12,0,14,475]
+"class_p4_1_1_symbolic_void.html":[12,0,14,475],
+"class_p4_1_1_symbolic_void.html":[13,0,12,490],
+"class_p4_1_1_synthesize_actions.html":[12,0,14,477]
 };
