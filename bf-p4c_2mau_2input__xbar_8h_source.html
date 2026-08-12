@@ -131,8 +131,8 @@ $(function(){initNavTree('bf-p4c_2mau_2input__xbar_8h_source.html',''); initResi
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef BF_P4C_MAU_INPUT_XBAR_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define BF_P4C_MAU_INPUT_XBAR_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef BACKENDS_TOFINO_BF_P4C_MAU_INPUT_XBAR_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define BACKENDS_TOFINO_BF_P4C_MAU_INPUT_XBAR_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;map&gt;</span></div>
@@ -143,13 +143,13 @@ $(function(){initNavTree('bf-p4c_2mau_2input__xbar_8h_source.html',''); initResi
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/common/alloc.h&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/common/asm_output.h&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/common/slice.h&quot;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/device.h&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/lib/autoclone.h&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/lib/dyn_vector.h&quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/mau/attached_entries.h&quot;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/mau/ixbar_expr.h&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/mau/table_layout.h&quot;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/phv/phv_fields.h&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/lib/autoclone.h&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/lib/dyn_vector.h&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/mau/attached_entries.h&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/mau/ixbar_expr.h&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/mau/table_layout.h&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/phv/phv_fields.h&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/specs/device.h&quot;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;ir/ir.h&quot;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;lib/hex.h&quot;</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;lib/safe_vector.h&quot;</span></div>
@@ -678,17 +678,17 @@ $(function(){initNavTree('bf-p4c_2mau_2input__xbar_8h_source.html',''); initResi
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    <span class="keywordflow">return</span> out;</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>}</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor">#endif </span><span class="comment">/* BF_P4C_MAU_INPUT_XBAR_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor">#endif </span><span class="comment">/* BACKENDS_TOFINO_BF_P4C_MAU_INPUT_XBAR_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclass_layout_option_html"><div class="ttname"><a href="class_layout_option.html">LayoutOption</a></div><div class="ttdef"><b>Definition</b> table_layout.h:34</div></div>
 <div class="ttc" id="aclass_mau_asm_output_html"><div class="ttname"><a href="class_mau_asm_output.html">MauAsmOutput</a></div><div class="ttdef"><b>Definition</b> mau/asm_output.h:85</div></div>
-<div class="ttc" id="aclass_p4_1_1_i_has_db_print_html"><div class="ttname"><a href="class_p4_1_1_i_has_db_print.html">P4::IHasDbPrint</a></div><div class="ttdef"><b>Definition</b> stringify.h:33</div></div>
-<div class="ttc" id="aclass_p4_1_1bitvec_html"><div class="ttname"><a href="class_p4_1_1bitvec.html">P4::bitvec</a></div><div class="ttdef"><b>Definition</b> bitvec.h:120</div></div>
-<div class="ttc" id="aclass_p4_1_1cstring_html"><div class="ttname"><a href="class_p4_1_1cstring.html">P4::cstring</a></div><div class="ttdef"><b>Definition</b> cstring.h:85</div></div>
-<div class="ttc" id="aclass_p4_1_1hex_html"><div class="ttname"><a href="class_p4_1_1hex.html">P4::hex</a></div><div class="ttdef"><b>Definition</b> hex.h:27</div></div>
-<div class="ttc" id="aclass_p4_1_1indent__t_html"><div class="ttname"><a href="class_p4_1_1indent__t.html">P4::indent_t</a></div><div class="ttdef"><b>Definition</b> indent.h:26</div></div>
-<div class="ttc" id="aclass_p4_1_1ordered__map_html"><div class="ttname"><a href="class_p4_1_1ordered__map.html">P4::ordered_map</a></div><div class="ttdef"><b>Definition</b> ordered_map.h:32</div></div>
-<div class="ttc" id="aclass_p4_1_1safe__vector_html"><div class="ttname"><a href="class_p4_1_1safe__vector.html">P4::safe_vector</a></div><div class="ttdef"><b>Definition</b> safe_vector.h:27</div></div>
-<div class="ttc" id="aclass_p_h_v_1_1_container_html"><div class="ttname"><a href="class_p_h_v_1_1_container.html">PHV::Container</a></div><div class="ttdef"><b>Definition</b> bf-p4c/phv/phv.h:176</div></div>
+<div class="ttc" id="aclass_p4_1_1_i_has_db_print_html"><div class="ttname"><a href="class_p4_1_1_i_has_db_print.html">P4::IHasDbPrint</a></div><div class="ttdef"><b>Definition</b> stringify.h:24</div></div>
+<div class="ttc" id="aclass_p4_1_1bitvec_html"><div class="ttname"><a href="class_p4_1_1bitvec.html">P4::bitvec</a></div><div class="ttdef"><b>Definition</b> bitvec.h:111</div></div>
+<div class="ttc" id="aclass_p4_1_1cstring_html"><div class="ttname"><a href="class_p4_1_1cstring.html">P4::cstring</a></div><div class="ttdef"><b>Definition</b> cstring.h:76</div></div>
+<div class="ttc" id="aclass_p4_1_1hex_html"><div class="ttname"><a href="class_p4_1_1hex.html">P4::hex</a></div><div class="ttdef"><b>Definition</b> hex.h:18</div></div>
+<div class="ttc" id="aclass_p4_1_1indent__t_html"><div class="ttname"><a href="class_p4_1_1indent__t.html">P4::indent_t</a></div><div class="ttdef"><b>Definition</b> indent.h:17</div></div>
+<div class="ttc" id="aclass_p4_1_1ordered__map_html"><div class="ttname"><a href="class_p4_1_1ordered__map.html">P4::ordered_map</a></div><div class="ttdef"><b>Definition</b> ordered_map.h:23</div></div>
+<div class="ttc" id="aclass_p4_1_1safe__vector_html"><div class="ttname"><a href="class_p4_1_1safe__vector.html">P4::safe_vector</a></div><div class="ttdef"><b>Definition</b> safe_vector.h:18</div></div>
+<div class="ttc" id="aclass_p_h_v_1_1_container_html"><div class="ttname"><a href="class_p_h_v_1_1_container.html">PHV::Container</a></div><div class="ttdef"><b>Definition</b> bf-p4c/specs/phv.h:171</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_field_html"><div class="ttname"><a href="class_p_h_v_1_1_field.html">PHV::Field</a></div><div class="ttdef"><b>Definition</b> phv_fields.h:154</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_field_html_a6dc1459985650d5003fe4638787556c8"><div class="ttname"><a href="class_p_h_v_1_1_field.html#a6dc1459985650d5003fe4638787556c8">PHV::Field::name</a></div><div class="ttdeci">cstring name</div><div class="ttdef"><b>Definition</b> phv_fields.h:161</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_field_slice_html"><div class="ttname"><a href="class_p_h_v_1_1_field_slice.html">PHV::FieldSlice</a></div><div class="ttdef"><b>Definition</b> phv_fields.h:898</div></div>
@@ -697,8 +697,8 @@ $(function(){initNavTree('bf-p4c_2mau_2input__xbar_8h_source.html',''); initResi
 <div class="ttc" id="aclass_phv_info_html"><div class="ttname"><a href="class_phv_info.html">PhvInfo</a></div><div class="ttdef"><b>Definition</b> phv_fields.h:1095</div></div>
 <div class="ttc" id="aclass_table_match_html"><div class="ttname"><a href="class_table_match.html">TableMatch</a></div><div class="ttdef"><b>Definition</b> mau/asm_output.h:223</div></div>
 <div class="ttc" id="aclassdyn__vector_html"><div class="ttname"><a href="classdyn__vector.html">dyn_vector</a></div><div class="ttdef"><b>Definition</b> dyn_vector.h:27</div></div>
-<div class="ttc" id="anamespace_b_f_n_html"><div class="ttname"><a href="namespace_b_f_n.html">BFN</a></div><div class="ttdoc">The namespace encapsulating Barefoot/Intel-specific stuff.</div><div class="ttdef"><b>Definition</b> bf-asm/alloc.h:10</div></div>
-<div class="ttc" id="anamespace_p4_html"><div class="ttname"><a href="namespace_p4.html">P4</a></div><div class="ttdoc">TODO: this is not really specific to BMV2, it should reside somewhere else.</div><div class="ttdef"><b>Definition</b> applyOptionsPragmas.cpp:24</div></div>
+<div class="ttc" id="anamespace_b_f_n_html"><div class="ttname"><a href="namespace_b_f_n.html">BFN</a></div><div class="ttdoc">The namespace encapsulating Barefoot/Intel-specific stuff.</div><div class="ttdef"><b>Definition</b> bf-asm/alloc.h:16</div></div>
+<div class="ttc" id="anamespace_p4_html"><div class="ttname"><a href="namespace_p4.html">P4</a></div><div class="ttdoc">TODO: this is not really specific to BMV2, it should reside somewhere else.</div><div class="ttdef"><b>Definition</b> applyOptionsPragmas.cpp:13</div></div>
 <div class="ttc" id="astruct_action_data_1_1_format_1_1_use_html"><div class="ttname"><a href="struct_action_data_1_1_format_1_1_use.html">ActionData::Format::Use</a></div><div class="ttdef"><b>Definition</b> action_format.h:979</div></div>
 <div class="ttc" id="astruct_b_f_n_1_1_resources_1_1_stage_resources_html"><div class="ttname"><a href="struct_b_f_n_1_1_resources_1_1_stage_resources.html">BFN::Resources::StageResources</a></div><div class="ttdef"><b>Definition</b> resources.h:125</div></div>
 <div class="ttc" id="astruct_i_x_bar_1_1_field_info_html"><div class="ttname"><a href="struct_i_x_bar_1_1_field_info.html">IXBar::FieldInfo</a></div><div class="ttdef"><b>Definition</b> bf-p4c/mau/input_xbar.h:128</div></div>
@@ -727,11 +727,15 @@ $(function(){initNavTree('bf-p4c_2mau_2input__xbar_8h_source.html',''); initResi
 <div class="ttc" id="astruct_i_x_bar_random_html_a2ce7f297150fd4ab535752a047ad07f2"><div class="ttname"><a href="struct_i_x_bar_random.html#a2ce7f297150fd4ab535752a047ad07f2">IXBarRandom::distribution1</a></div><div class="ttdeci">static std::uniform_int_distribution&lt; unsigned &gt; distribution1</div><div class="ttdoc">Uniform distribution producing either a 0 or a 1.</div><div class="ttdef"><b>Definition</b> bf-p4c/mau/input_xbar.h:63</div></div>
 <div class="ttc" id="astruct_i_x_bar_random_html_a9efbe8b2c00292de1627982aa94ade2a"><div class="ttname"><a href="struct_i_x_bar_random.html#a9efbe8b2c00292de1627982aa94ade2a">IXBarRandom::distribution10</a></div><div class="ttdeci">static std::uniform_int_distribution&lt; unsigned &gt; distribution10</div><div class="ttdoc">Uniform distribution producing a 10-bit random number.</div><div class="ttdef"><b>Definition</b> bf-p4c/mau/input_xbar.h:61</div></div>
 <div class="ttc" id="astruct_i_x_bar_random_html_ae7eefcae4fe202b528c44c591ac732b2"><div class="ttname"><a href="struct_i_x_bar_random.html#ae7eefcae4fe202b528c44c591ac732b2">IXBarRandom::nextRandomNumber</a></div><div class="ttdeci">static unsigned nextRandomNumber(unsigned numBits=1)</div><div class="ttdef"><b>Definition</b> bf-p4c/mau/input_xbar.cpp:43</div></div>
-<div class="ttc" id="astruct_p4_1_1_backtrack_1_1trigger_html"><div class="ttname"><a href="struct_p4_1_1_backtrack_1_1trigger.html">P4::Backtrack::trigger</a></div><div class="ttdef"><b>Definition</b> visitor.h:781</div></div>
-<div class="ttc" id="astruct_p4_1_1_closed_range_html_a27e93e2aca5a79e2c3236a8e2226cf0a"><div class="ttname"><a href="struct_p4_1_1_closed_range.html#a27e93e2aca5a79e2c3236a8e2226cf0a">P4::ClosedRange::overlaps</a></div><div class="ttdeci">bool overlaps(ClosedRange a) const</div><div class="ttdef"><b>Definition</b> lib/bitrange.h:603</div></div>
+<div class="ttc" id="astruct_p4_1_1_backtrack_1_1trigger_html"><div class="ttname"><a href="struct_p4_1_1_backtrack_1_1trigger.html">P4::Backtrack::trigger</a></div><div class="ttdef"><b>Definition</b> visitor.h:782</div></div>
+<div class="ttc" id="astruct_p4_1_1_closed_range_html_a27e93e2aca5a79e2c3236a8e2226cf0a"><div class="ttname"><a href="struct_p4_1_1_closed_range.html#a27e93e2aca5a79e2c3236a8e2226cf0a">P4::ClosedRange::overlaps</a></div><div class="ttdeci">bool overlaps(ClosedRange a) const</div><div class="ttdef"><b>Definition</b> lib/bitrange.h:594</div></div>
 <div class="ttc" id="astruct_table_resource_alloc_html"><div class="ttname"><a href="struct_table_resource_alloc.html">TableResourceAlloc</a></div><div class="ttdef"><b>Definition</b> resource.h:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!--
+SPDX-FileCopyrightText: 2017 Barefoot Networks, Inc.
+SPDX-License-Identifier: Apache-2.0
+-->
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

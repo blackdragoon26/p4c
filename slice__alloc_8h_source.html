@@ -131,13 +131,13 @@ $(function(){initNavTree('slice__alloc_8h_source.html',''); initResizable(true);
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef BF_P4C_PHV_UTILS_SLICE_ALLOC_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define BF_P4C_PHV_UTILS_SLICE_ALLOC_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef BACKENDS_TOFINO_BF_P4C_PHV_UTILS_SLICE_ALLOC_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define BACKENDS_TOFINO_BF_P4C_PHV_UTILS_SLICE_ALLOC_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/ir/bitrange.h&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/phv/phv.h&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/specs/phv.h&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;ir/ir.h&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;lib/bitvec.h&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;lib/symbitmatrix.h&quot;</span></div>
@@ -505,23 +505,27 @@ $(function(){initNavTree('slice__alloc_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>std::ostream &amp;operator&lt;&lt;(std::ostream &amp;, <span class="keyword">const</span> <a class="code hl_class" href="class_p4_1_1safe__vector.html">safe_vector&lt;PHV::AllocSlice&gt;</a> &amp;);</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">#endif </span><span class="comment">/* BF_P4C_PHV_UTILS_SLICE_ALLOC_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_p4_1_1cstring_html"><div class="ttname"><a href="class_p4_1_1cstring.html">P4::cstring</a></div><div class="ttdef"><b>Definition</b> cstring.h:85</div></div>
-<div class="ttc" id="aclass_p4_1_1ordered__map_html"><div class="ttname"><a href="class_p4_1_1ordered__map.html">P4::ordered_map</a></div><div class="ttdef"><b>Definition</b> ordered_map.h:32</div></div>
-<div class="ttc" id="aclass_p4_1_1ordered__set_html"><div class="ttname"><a href="class_p4_1_1ordered__set.html">P4::ordered_set</a></div><div class="ttdef"><b>Definition</b> ordered_set.h:32</div></div>
-<div class="ttc" id="aclass_p4_1_1safe__vector_html"><div class="ttname"><a href="class_p4_1_1safe__vector.html">P4::safe_vector</a></div><div class="ttdef"><b>Definition</b> safe_vector.h:27</div></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">#endif </span><span class="comment">/* BACKENDS_TOFINO_BF_P4C_PHV_UTILS_SLICE_ALLOC_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclass_p4_1_1cstring_html"><div class="ttname"><a href="class_p4_1_1cstring.html">P4::cstring</a></div><div class="ttdef"><b>Definition</b> cstring.h:76</div></div>
+<div class="ttc" id="aclass_p4_1_1ordered__map_html"><div class="ttname"><a href="class_p4_1_1ordered__map.html">P4::ordered_map</a></div><div class="ttdef"><b>Definition</b> ordered_map.h:23</div></div>
+<div class="ttc" id="aclass_p4_1_1ordered__set_html"><div class="ttname"><a href="class_p4_1_1ordered__set.html">P4::ordered_set</a></div><div class="ttdef"><b>Definition</b> ordered_set.h:23</div></div>
+<div class="ttc" id="aclass_p4_1_1safe__vector_html"><div class="ttname"><a href="class_p4_1_1safe__vector.html">P4::safe_vector</a></div><div class="ttdef"><b>Definition</b> safe_vector.h:18</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_alloc_context_html"><div class="ttname"><a href="class_p_h_v_1_1_alloc_context.html">PHV::AllocContext</a></div><div class="ttdoc">Represents a PHV-allocation context: a parser, a table, or a deparser.</div><div class="ttdef"><b>Definition</b> phv_fields.h:83</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_alloc_slice_html"><div class="ttname"><a href="class_p_h_v_1_1_alloc_slice.html">PHV::AllocSlice</a></div><div class="ttdef"><b>Definition</b> slice_alloc.h:136</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_alloc_slice_html_ae0b3198c47f516e74fc73d0639f4cd93"><div class="ttname"><a href="class_p_h_v_1_1_alloc_slice.html#ae0b3198c47f516e74fc73d0639f4cd93">PHV::AllocSlice::isEarlierFieldslice</a></div><div class="ttdeci">bool isEarlierFieldslice(const AllocSlice &amp;other) const</div><div class="ttdoc">Check if the references of the slice are earlier than the @other refs.</div><div class="ttdef"><b>Definition</b> slice_alloc.cpp:127</div></div>
-<div class="ttc" id="aclass_p_h_v_1_1_container_html"><div class="ttname"><a href="class_p_h_v_1_1_container.html">PHV::Container</a></div><div class="ttdef"><b>Definition</b> bf-p4c/phv/phv.h:176</div></div>
+<div class="ttc" id="aclass_p_h_v_1_1_container_html"><div class="ttname"><a href="class_p_h_v_1_1_container.html">PHV::Container</a></div><div class="ttdef"><b>Definition</b> bf-p4c/specs/phv.h:171</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_dark_init_entry_html"><div class="ttname"><a href="class_p_h_v_1_1_dark_init_entry.html">PHV::DarkInitEntry</a></div><div class="ttdef"><b>Definition</b> slice_alloc.h:300</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_dark_init_primitive_html"><div class="ttname"><a href="class_p_h_v_1_1_dark_init_primitive.html">PHV::DarkInitPrimitive</a></div><div class="ttdef"><b>Definition</b> slice_alloc.h:51</div></div>
 <div class="ttc" id="aclass_p_h_v_1_1_field_html"><div class="ttname"><a href="class_p_h_v_1_1_field.html">PHV::Field</a></div><div class="ttdef"><b>Definition</b> phv_fields.h:154</div></div>
-<div class="ttc" id="aclass_p_h_v_1_1_field_use_html"><div class="ttname"><a href="class_p_h_v_1_1_field_use.html">PHV::FieldUse</a></div><div class="ttdef"><b>Definition</b> bf-p4c/phv/phv.h:248</div></div>
+<div class="ttc" id="aclass_p_h_v_1_1_field_use_html"><div class="ttname"><a href="class_p_h_v_1_1_field_use.html">PHV::FieldUse</a></div><div class="ttdef"><b>Definition</b> bf-p4c/specs/phv.h:240</div></div>
 <div class="ttc" id="anamespace_p_h_v_html"><div class="ttname"><a href="namespace_p_h_v.html">PHV</a></div><div class="ttdoc">The namespace encapsulating PHV-related stuff.</div><div class="ttdef"><b>Definition</b> bf-p4c/mau/gateway.h:32</div></div>
-<div class="ttc" id="astruct_p4_1_1_bit_range_1_1_start_len_html"><div class="ttname"><a href="struct_p4_1_1_bit_range_1_1_start_len.html">P4::BitRange::StartLen</a></div><div class="ttdef"><b>Definition</b> lib/bitrange.h:158</div></div>
+<div class="ttc" id="astruct_p4_1_1_bit_range_1_1_start_len_html"><div class="ttname"><a href="struct_p4_1_1_bit_range_1_1_start_len.html">P4::BitRange::StartLen</a></div><div class="ttdef"><b>Definition</b> lib/bitrange.h:149</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!--
+SPDX-FileCopyrightText: 2017 Barefoot Networks, Inc.
+SPDX-License-Identifier: Apache-2.0
+-->
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

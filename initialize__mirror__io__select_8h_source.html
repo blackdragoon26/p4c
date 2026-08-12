@@ -131,13 +131,13 @@ $(function(){initNavTree('initialize__mirror__io__select_8h_source.html',''); in
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef INITIALIZE_MIRROR_IO_SELECT_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define INITIALIZE_MIRROR_IO_SELECT_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef BACKENDS_TOFINO_BF_P4C_MIDEND_INITIALIZE_MIRROR_IO_SELECT_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define BACKENDS_TOFINO_BF_P4C_MIDEND_INITIALIZE_MIRROR_IO_SELECT_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/arch/arch.h&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/common/pragma/all_pragmas.h&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/common/pragma/collect_global_pragma.h&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/device.h&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;backends/tofino/bf-p4c/specs/device.h&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;ir/ir.h&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;type_checker.h&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -149,7 +149,7 @@ $(function(){initNavTree('initialize__mirror__io__select_8h_source.html',''); in
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_p4_1_1cstring.html">cstring</a> egIntrMdForDprsrName;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    DoInitializeMirrorIOSelect(){};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    DoInitializeMirrorIOSelect() {};</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// disable this pass if the @disable_egress_mirror_io_select_initialization pragma is used</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_p4_1_1_i_r_1_1_node.html">IR::Node</a> *preorder(IR::P4Program *p)<span class="keyword"> override </span>{</div>
@@ -196,23 +196,27 @@ $(function(){initNavTree('initialize__mirror__io__select_8h_source.html',''); in
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}  <span class="comment">// namespace BFN</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif  </span><span class="comment">// INITIALIZE_MIRROR_IO_SELECT_H_</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif </span><span class="comment">/* BACKENDS_TOFINO_BF_P4C_MIDEND_INITIALIZE_MIRROR_IO_SELECT_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclass_b_f_n_1_1_do_initialize_mirror_i_o_select_html"><div class="ttname"><a href="class_b_f_n_1_1_do_initialize_mirror_i_o_select.html">BFN::DoInitializeMirrorIOSelect</a></div><div class="ttdef"><b>Definition</b> initialize_mirror_io_select.h:32</div></div>
 <div class="ttc" id="aclass_collect_global_pragma_html"><div class="ttname"><a href="class_collect_global_pragma.html">CollectGlobalPragma</a></div><div class="ttdef"><b>Definition</b> collect_global_pragma.h:28</div></div>
 <div class="ttc" id="aclass_collect_global_pragma_html_a194fbb99e06c3c3b7aca12b3402be028"><div class="ttname"><a href="class_collect_global_pragma.html#a194fbb99e06c3c3b7aca12b3402be028">CollectGlobalPragma::exists</a></div><div class="ttdeci">const IR::Annotation * exists(const char *pragma_name) const</div><div class="ttdoc">Check if pragma exists.</div><div class="ttdef"><b>Definition</b> collect_global_pragma.cpp:120</div></div>
-<div class="ttc" id="aclass_p4_1_1_apply_types_to_expressions_html"><div class="ttname"><a href="class_p4_1_1_apply_types_to_expressions.html">P4::ApplyTypesToExpressions</a></div><div class="ttdef"><b>Definition</b> typeChecker.h:631</div></div>
-<div class="ttc" id="aclass_p4_1_1_clear_type_map_html"><div class="ttname"><a href="class_p4_1_1_clear_type_map.html">P4::ClearTypeMap</a></div><div class="ttdef"><b>Definition</b> typeChecker.h:32</div></div>
-<div class="ttc" id="aclass_p4_1_1_i_r_1_1_node_html"><div class="ttname"><a href="class_p4_1_1_i_r_1_1_node.html">P4::IR::Node</a></div><div class="ttdef"><b>Definition</b> node.h:94</div></div>
-<div class="ttc" id="aclass_p4_1_1_pass_if_html"><div class="ttname"><a href="class_p4_1_1_pass_if.html">P4::PassIf</a></div><div class="ttdef"><b>Definition</b> ir/pass_manager.h:172</div></div>
-<div class="ttc" id="aclass_p4_1_1_reference_map_html"><div class="ttname"><a href="class_p4_1_1_reference_map.html">P4::ReferenceMap</a></div><div class="ttdoc">Class used to encode maps from paths to declarations.</div><div class="ttdef"><b>Definition</b> referenceMap.h:67</div></div>
-<div class="ttc" id="aclass_p4_1_1_resolve_references_html"><div class="ttname"><a href="class_p4_1_1_resolve_references.html">P4::ResolveReferences</a></div><div class="ttdef"><b>Definition</b> resolveReferences.h:124</div></div>
-<div class="ttc" id="aclass_p4_1_1_transform_html"><div class="ttname"><a href="class_p4_1_1_transform.html">P4::Transform</a></div><div class="ttdef"><b>Definition</b> visitor.h:437</div></div>
-<div class="ttc" id="aclass_p4_1_1_type_inference_html"><div class="ttname"><a href="class_p4_1_1_type_inference.html">P4::TypeInference</a></div><div class="ttdef"><b>Definition</b> typeChecker.h:491</div></div>
-<div class="ttc" id="aclass_p4_1_1_type_map_html"><div class="ttname"><a href="class_p4_1_1_type_map.html">P4::TypeMap</a></div><div class="ttdef"><b>Definition</b> typeMap.h:41</div></div>
-<div class="ttc" id="aclass_p4_1_1cstring_html"><div class="ttname"><a href="class_p4_1_1cstring.html">P4::cstring</a></div><div class="ttdef"><b>Definition</b> cstring.h:85</div></div>
-<div class="ttc" id="anamespace_b_f_n_html"><div class="ttname"><a href="namespace_b_f_n.html">BFN</a></div><div class="ttdoc">The namespace encapsulating Barefoot/Intel-specific stuff.</div><div class="ttdef"><b>Definition</b> bf-asm/alloc.h:10</div></div>
+<div class="ttc" id="aclass_p4_1_1_apply_types_to_expressions_html"><div class="ttname"><a href="class_p4_1_1_apply_types_to_expressions.html">P4::ApplyTypesToExpressions</a></div><div class="ttdef"><b>Definition</b> typeChecker.h:639</div></div>
+<div class="ttc" id="aclass_p4_1_1_clear_type_map_html"><div class="ttname"><a href="class_p4_1_1_clear_type_map.html">P4::ClearTypeMap</a></div><div class="ttdef"><b>Definition</b> typeChecker.h:23</div></div>
+<div class="ttc" id="aclass_p4_1_1_i_r_1_1_node_html"><div class="ttname"><a href="class_p4_1_1_i_r_1_1_node.html">P4::IR::Node</a></div><div class="ttdef"><b>Definition</b> node.h:44</div></div>
+<div class="ttc" id="aclass_p4_1_1_pass_if_html"><div class="ttname"><a href="class_p4_1_1_pass_if.html">P4::PassIf</a></div><div class="ttdef"><b>Definition</b> ir/pass_manager.h:164</div></div>
+<div class="ttc" id="aclass_p4_1_1_reference_map_html"><div class="ttname"><a href="class_p4_1_1_reference_map.html">P4::ReferenceMap</a></div><div class="ttdoc">Class used to encode maps from paths to declarations.</div><div class="ttdef"><b>Definition</b> referenceMap.h:58</div></div>
+<div class="ttc" id="aclass_p4_1_1_resolve_references_html"><div class="ttname"><a href="class_p4_1_1_resolve_references.html">P4::ResolveReferences</a></div><div class="ttdef"><b>Definition</b> resolveReferences.h:115</div></div>
+<div class="ttc" id="aclass_p4_1_1_transform_html"><div class="ttname"><a href="class_p4_1_1_transform.html">P4::Transform</a></div><div class="ttdef"><b>Definition</b> visitor.h:433</div></div>
+<div class="ttc" id="aclass_p4_1_1_type_inference_html"><div class="ttname"><a href="class_p4_1_1_type_inference.html">P4::TypeInference</a></div><div class="ttdef"><b>Definition</b> typeChecker.h:496</div></div>
+<div class="ttc" id="aclass_p4_1_1_type_map_html"><div class="ttname"><a href="class_p4_1_1_type_map.html">P4::TypeMap</a></div><div class="ttdef"><b>Definition</b> typeMap.h:32</div></div>
+<div class="ttc" id="aclass_p4_1_1cstring_html"><div class="ttname"><a href="class_p4_1_1cstring.html">P4::cstring</a></div><div class="ttdef"><b>Definition</b> cstring.h:76</div></div>
+<div class="ttc" id="anamespace_b_f_n_html"><div class="ttname"><a href="namespace_b_f_n.html">BFN</a></div><div class="ttdoc">The namespace encapsulating Barefoot/Intel-specific stuff.</div><div class="ttdef"><b>Definition</b> bf-asm/alloc.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!--
+SPDX-FileCopyrightText: 2017 Barefoot Networks, Inc.
+SPDX-License-Identifier: Apache-2.0
+-->
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

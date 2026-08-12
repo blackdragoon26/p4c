@@ -131,14 +131,14 @@ $(function(){initNavTree('deparser__checksum__update_8h_source.html',''); initRe
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef BF_P4C_PARDE_DEPARSER_CHECKSUM_UPDATE_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define BF_P4C_PARDE_DEPARSER_CHECKSUM_UPDATE_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef BACKENDS_TOFINO_BF_P4C_PARDE_DEPARSER_CHECKSUM_UPDATE_H_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define BACKENDS_TOFINO_BF_P4C_PARDE_DEPARSER_CHECKSUM_UPDATE_H_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;ir/ir.h&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_p4.html">P4</a> {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span>IR {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_p4_1_1_i_r.html">IR</a> {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span>BFN {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">class </span>Pipe;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}  <span class="comment">// namespace BFN</span></div>
@@ -152,12 +152,17 @@ $(function(){initNavTree('deparser__checksum__update_8h_source.html',''); initRe
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>IR::BFN::Pipe *<a class="code hl_function" href="group___extract_checksum.html#ga2e547bdecf6ca866ce12868444dcedda">extractChecksumFromDeparser</a>(<span class="keyword">const</span> IR::BFN::TnaDeparser *deparser,</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                           IR::BFN::Pipe *pipe);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace BFN</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">/* BF_P4C_PARDE_DEPARSER_CHECKSUM_UPDATE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">/* BACKENDS_TOFINO_BF_P4C_PARDE_DEPARSER_CHECKSUM_UPDATE_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="agroup___extract_checksum_html_ga2e547bdecf6ca866ce12868444dcedda"><div class="ttname"><a href="group___extract_checksum.html#ga2e547bdecf6ca866ce12868444dcedda">BFN::extractChecksumFromDeparser</a></div><div class="ttdeci">IR::BFN::Pipe * extractChecksumFromDeparser(const IR::BFN::TnaDeparser *deparser, IR::BFN::Pipe *pipe)</div><div class="ttdef"><b>Definition</b> deparser_checksum_update.cpp:1038</div></div>
-<div class="ttc" id="anamespace_b_f_n_html"><div class="ttname"><a href="namespace_b_f_n.html">BFN</a></div><div class="ttdoc">The namespace encapsulating Barefoot/Intel-specific stuff.</div><div class="ttdef"><b>Definition</b> bf-asm/alloc.h:10</div></div>
-<div class="ttc" id="anamespace_p4_html"><div class="ttname"><a href="namespace_p4.html">P4</a></div><div class="ttdoc">TODO: this is not really specific to BMV2, it should reside somewhere else.</div><div class="ttdef"><b>Definition</b> applyOptionsPragmas.cpp:24</div></div>
+<div class="ttc" id="anamespace_b_f_n_html"><div class="ttname"><a href="namespace_b_f_n.html">BFN</a></div><div class="ttdoc">The namespace encapsulating Barefoot/Intel-specific stuff.</div><div class="ttdef"><b>Definition</b> bf-asm/alloc.h:16</div></div>
+<div class="ttc" id="anamespace_p4_1_1_i_r_html"><div class="ttname"><a href="namespace_p4_1_1_i_r.html">P4::IR</a></div><div class="ttdef"><b>Definition</b> constantParsing.h:13</div></div>
+<div class="ttc" id="anamespace_p4_html"><div class="ttname"><a href="namespace_p4.html">P4</a></div><div class="ttdoc">TODO: this is not really specific to BMV2, it should reside somewhere else.</div><div class="ttdef"><b>Definition</b> applyOptionsPragmas.cpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!--
+SPDX-FileCopyrightText: 2017 Barefoot Networks, Inc.
+SPDX-License-Identifier: Apache-2.0
+-->
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

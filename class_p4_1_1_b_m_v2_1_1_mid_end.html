@@ -141,9 +141,9 @@ Inheritance diagram for P4::BMV2::MidEnd:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7454ae6058ffc4374ba71ed404c1ee34" id="r_a7454ae6058ffc4374ba71ed404c1ee34"><td class="memItemLeft" align="right" valign="top"><a id="a7454ae6058ffc4374ba71ed404c1ee34" name="a7454ae6058ffc4374ba71ed404c1ee34"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MidEnd</b> (<a class="el" href="class_p4_1_1_compiler_options.html">CompilerOptions</a> &amp;options)</td></tr>
-<tr class="separator:a7454ae6058ffc4374ba71ed404c1ee34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a99c04c7caa19c72f82db02bb09bed" id="r_a89a99c04c7caa19c72f82db02bb09bed"><td class="memItemLeft" align="right" valign="top"><a id="a89a99c04c7caa19c72f82db02bb09bed" name="a89a99c04c7caa19c72f82db02bb09bed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MidEnd</b> (<a class="el" href="class_p4_1_1_compiler_options.html">CompilerOptions</a> &amp;)</td></tr>
+<tr class="separator:a89a99c04c7caa19c72f82db02bb09bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c7ea863e98f3db20bb3707cb439a0e2" id="r_a0c7ea863e98f3db20bb3707cb439a0e2"><td class="memItemLeft" align="right" valign="top"><a id="a0c7ea863e98f3db20bb3707cb439a0e2" name="a0c7ea863e98f3db20bb3707cb439a0e2"></a>
 const IR::ToplevelBlock *&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (const IR::P4Program *&amp;program)</td></tr>
 <tr class="separator:a0c7ea863e98f3db20bb3707cb439a0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +175,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addPasses</b> (const 
 <tr class="memitem:a0785ef49ac996a6e72c6ffb28e071469 inherit pub_methods_class_p4_1_1_pass_manager" id="r_a0785ef49ac996a6e72c6ffb28e071469"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>early_exit</b> ()</td></tr>
 <tr class="separator:a0785ef49ac996a6e72c6ffb28e071469 inherit pub_methods_class_p4_1_1_pass_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f53aba5f1e75fe59f23d03b07db4e3 inherit pub_methods_class_p4_1_1_pass_manager" id="r_aa1f53aba5f1e75fe59f23d03b07db4e3"><td class="memItemLeft" align="right" valign="top">
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>getPasses</b> ()</td></tr>
+<tr class="separator:aa1f53aba5f1e75fe59f23d03b07db4e3 inherit pub_methods_class_p4_1_1_pass_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa763d71c06378439201b4ee45a76faac inherit pub_methods_class_p4_1_1_pass_manager" id="r_aa763d71c06378439201b4ee45a76faac"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>listPasses</b> (std::ostream &amp;, <a class="el" href="class_p4_1_1cstring.html">cstring</a> sep) const</td></tr>
 <tr class="separator:aa763d71c06378439201b4ee45a76faac inherit pub_methods_class_p4_1_1_pass_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,9 +356,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a194c750780529fb8a884bd0fd751b79e" id="r_a194c750780529fb8a884bd0fd751b79e"><td class="memItemLeft" align="right" valign="top"><a id="a194c750780529fb8a884bd0fd751b79e" name="a194c750780529fb8a884bd0fd751b79e"></a>
 P4::ConvertEnums::EnumMapping&#160;</td><td class="memItemRight" valign="bottom"><b>enumMap</b></td></tr>
 <tr class="separator:a194c750780529fb8a884bd0fd751b79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a141aa972b8221f3b26fa8d0dc9e28c" id="r_a1a141aa972b8221f3b26fa8d0dc9e28c"><td class="memItemLeft" align="right" valign="top"><a id="a1a141aa972b8221f3b26fa8d0dc9e28c" name="a1a141aa972b8221f3b26fa8d0dc9e28c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isv1</b></td></tr>
-<tr class="separator:a1a141aa972b8221f3b26fa8d0dc9e28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01dc5d5d940a9584b95add1bc8a5cac3" id="r_a01dc5d5d940a9584b95add1bc8a5cac3"><td class="memItemLeft" align="right" valign="top"><a id="a01dc5d5d940a9584b95add1bc8a5cac3" name="a01dc5d5d940a9584b95add1bc8a5cac3"></a>
 <a class="el" href="class_p4_1_1_reference_map.html">P4::ReferenceMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>refMap</b></td></tr>
 <tr class="memdesc:a01dc5d5d940a9584b95add1bc8a5cac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">These will be accurate when the mid-end completes evaluation. <br /></td></tr>
@@ -444,6 +444,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>visitDagOnce</b> = tr
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!--
+SPDX-FileCopyrightText: 2017 Barefoot Networks, Inc.
+SPDX-License-Identifier: Apache-2.0
+-->
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

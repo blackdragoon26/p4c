@@ -296,6 +296,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>revisit</b> (
 <tr class="memitem:aad4d91e5e14b48408c6b080c177f9fa6 inherit pub_methods_class_p4_1_1_transform" id="r_aad4d91e5e14b48408c6b080c177f9fa6"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>revisit_visited</b> ()</td></tr>
 <tr class="separator:aad4d91e5e14b48408c6b080c177f9fa6 inherit pub_methods_class_p4_1_1_transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1b2267b8d792234793c1c529ca6a7e inherit pub_methods_class_p4_1_1_transform" id="r_a2c1b2267b8d792234793c1c529ca6a7e"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setOnNodeTransformedHook</b> (const std::function&lt; void(const <a class="el" href="class_p4_1_1_i_r_1_1_node.html">IR::Node</a> *from, const <a class="el" href="class_p4_1_1_i_r_1_1_node.html">IR::Node</a> *to)&gt; &amp;hook)</td></tr>
+<tr class="separator:a2c1b2267b8d792234793c1c529ca6a7e inherit pub_methods_class_p4_1_1_transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb019e816097ba57ed33a11358c07d5e inherit pub_methods_class_p4_1_1_transform" id="r_afb019e816097ba57ed33a11358c07d5e"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>visit_in_progress</b> (const <a class="el" href="class_p4_1_1_i_r_1_1_node.html">IR::Node</a> *) const</td></tr>
 <tr class="separator:afb019e816097ba57ed33a11358c07d5e inherit pub_methods_class_p4_1_1_transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -507,14 +510,16 @@ Protected Member Functions</h2></td></tr>
 const <a class="el" href="class_p4_1_1_i_r_1_1_node.html">IR::Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>binary</b> (const IR::Operation_Binary *op, std::function&lt; big_int(big_int, big_int)&gt; func, bool saturating=false)</td></tr>
 <tr class="memdesc:a5c8ac09d49d814a82da9ef7e1d706c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statically evaluate binary operation <code class="param">e</code> implemented by <code class="param">func</code>. <br /></td></tr>
 <tr class="separator:a5c8ac09d49d814a82da9ef7e1d706c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e867f5a180e573f4591ab391747efe" id="r_ab0e867f5a180e573f4591ab391747efe"><td class="memItemLeft" align="right" valign="top"><a id="ab0e867f5a180e573f4591ab391747efe" name="ab0e867f5a180e573f4591ab391747efe"></a>
-const IR::Constant *&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (const IR::Constant *node, unsigned base, const IR::Type_Bits *type) const</td></tr>
-<tr class="memdesc:ab0e867f5a180e573f4591ab391747efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statically cast constant <code class="param">node</code> to <code class="param">type</code> represented in the specified <code class="param">base</code>. <br /></td></tr>
-<tr class="separator:ab0e867f5a180e573f4591ab391747efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71ba657327abc6049c8090dcd2c7d01" id="r_aa71ba657327abc6049c8090dcd2c7d01"><td class="memItemLeft" align="right" valign="top"><a id="aa71ba657327abc6049c8090dcd2c7d01" name="aa71ba657327abc6049c8090dcd2c7d01"></a>
+const IR::Constant *&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (const IR::Constant *node, unsigned base, const IR::Type_Bits *type, bool noWarning=false) const</td></tr>
+<tr class="memdesc:aa71ba657327abc6049c8090dcd2c7d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statically cast constant <code class="param">node</code> to <code class="param">type</code> represented in the specified <code class="param">base</code>. <br /></td></tr>
+<tr class="separator:aa71ba657327abc6049c8090dcd2c7d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af128dd44c8dc8177f7a16c5762fbaf56" id="r_af128dd44c8dc8177f7a16c5762fbaf56"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_p4_1_1_i_r_1_1_node.html">IR::Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af128dd44c8dc8177f7a16c5762fbaf56">compare</a> (const IR::Operation_Binary *op)</td></tr>
 <tr class="separator:af128dd44c8dc8177f7a16c5762fbaf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca5b04b93f3560d362da4b1a62acdfa9" id="r_aca5b04b93f3560d362da4b1a62acdfa9"><td class="memItemLeft" align="right" valign="top">const IR::Expression *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca5b04b93f3560d362da4b1a62acdfa9">getConstant</a> (const IR::Expression *expr) const</td></tr>
 <tr class="separator:aca5b04b93f3560d362da4b1a62acdfa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa174f4319686246b541aa8c6d0750a68" id="r_aa174f4319686246b541aa8c6d0750a68"><td class="memItemLeft" align="right" valign="top">const IR::Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa174f4319686246b541aa8c6d0750a68">resolveType</a> (const IR::Type *t)</td></tr>
+<tr class="separator:aa174f4319686246b541aa8c6d0750a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92320f78791dd5ec5ad5f47be63a62db" id="r_a92320f78791dd5ec5ad5f47be63a62db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a2342289cbde2a320fa9887e509f4a30a">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92320f78791dd5ec5ad5f47be63a62db">setContains</a> (const IR::Expression *keySet, const IR::Expression *constant) const</td></tr>
 <tr class="separator:a92320f78791dd5ec5ad5f47be63a62db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a459b29cbeb3a5438d30f093ac296f971" id="r_a459b29cbeb3a5438d30f093ac296f971"><td class="memItemLeft" align="right" valign="top"><a id="a459b29cbeb3a5438d30f093ac296f971" name="a459b29cbeb3a5438d30f093ac296f971"></a>
@@ -683,6 +688,32 @@ const <a class="el" href="class_p4_1_1_visitor.html">Visitor</a> *&#160;</td><td
 
 </div>
 </div>
+<a id="aa174f4319686246b541aa8c6d0750a68" name="aa174f4319686246b541aa8c6d0750a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa174f4319686246b541aa8c6d0750a68">&#9670;&#160;</a></span>resolveType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const IR::Type * P4::DoConstantFolding::resolveType </td>
+          <td>(</td>
+          <td class="paramtype">const IR::Type *</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a concrete type from a Type_Typedef by resolving it and also getting any updated type from ConstantFolding an expression size into a Type_Bits </dd></dl>
+
+</div>
+</div>
 <a id="a92320f78791dd5ec5ad5f47be63a62db" name="a92320f78791dd5ec5ad5f47be63a62db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92320f78791dd5ec5ad5f47be63a62db">&#9670;&#160;</a></span>setContains()</h2>
 
@@ -769,6 +800,10 @@ const <a class="el" href="class_p4_1_1_visitor.html">Visitor</a> *&#160;</td><td
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!--
+SPDX-FileCopyrightText: 2017 Barefoot Networks, Inc.
+SPDX-License-Identifier: Apache-2.0
+-->
 <!-- HTML footer for doxygen 1.13.2-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
